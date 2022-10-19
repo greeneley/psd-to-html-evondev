@@ -19,4 +19,30 @@ img {
   height: 10rem;
 }
 
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1210px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header {
+  padding-top: 40px;
+}
+.header__inner {
+  display: flex;
+  align-items: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+$primary-color: #ffc87a;
+$text-color: #1a2b5f;
+
+
 html {
   font-size: 62.5%; // 1 rem = 10px
 }
@@ -17,4 +21,36 @@ img {
 .box {
   width: 10rem;
   height: 10rem;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+// wrapper
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1210px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+}
+
+.header {
+  padding-top: 40px;
+  &__inner {
+    @include flex(flex, space-between);
+  }
 }
